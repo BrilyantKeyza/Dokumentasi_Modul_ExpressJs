@@ -1,0 +1,7 @@
+<h1>Edit Mahasiswa</h1>
+<form action="/edit/<%= mahasiswa.id %>" method="post">
+    <input type="text" name="nama" value="<%= mahasiswa.nama %>" required>
+    <input type="text" name="nis" value="<%= mahasiswa.nis %>" required>
+    <input type="text" name="kelas" value="<%= mahasiswa.kelas %>" required>
+    <button type="submit">Simpan</button>
+</form>

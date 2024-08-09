@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Utama</title>
+</head>
+<body>
+    <h1>Selamat Datang di Halaman Utama!</h1>
+    <p>Nama: <%= name %></p>
+    <ul>
+      <% items.forEach(item => { %>
+        <li><%= item %></li>
+      <% }) %>
+    </ul>
+</body>
+</html>

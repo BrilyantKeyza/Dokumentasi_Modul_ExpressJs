@@ -1,0 +1,13 @@
+<h1>Daftar Mahasiswa</h1>
+<a href="/add">Tambah Mahasiswa</a>
+<ul>
+    <% mahasiswa.forEach(mhs => { %>
+        <li>
+            <%= mhs.nama %> - <%= mhs.nis %> - <%= mhs.kelas %>
+            <a href="/edit/<%= mhs.id %>">Edit</a>
+            <form action="/delete/<%= mhs.id %>" method="post" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    <% }) %>
+</ul>
